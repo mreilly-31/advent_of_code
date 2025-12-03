@@ -20,7 +20,10 @@ const recursiveIter = (arr, index, work) => {
 
 recursiveIter(jolts, 0, (arr, index) => {
   const jolt = arr[index];
-  const bank = jolt.split("").map(Number);
+  let bank = [];
+  recursiveIter(jolt.split(""), 0, (arr, index) => {
+    bank.push(Number(arr[index]))
+  });
   let max = 0;
   recursiveIter(bank, 0, (arr, index) => {
     if (index < bank.length - 1 && bank[index] > max) {
