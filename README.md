@@ -42,7 +42,7 @@ Your constraints:
 
 ---
 
-## **5. Use a Proxy to Intercept Operations**
+## **5. Use a Proxy to Intercept Operations** ✅
 
 Your solution must:
 
